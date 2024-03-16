@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> The holy scripture of Islam</title>
+	
+
+<header style="background-color: skyblue">
+<a href="#main" class="skip">Skip to main content</a>
+</header>
+    
+    
+    
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    
+ 
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link href="css1.css" rel="stylesheet" type="text/css">
+    
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.dialog.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.resizable.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.dialog.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>   
+
+
+
+</head>
+    
+<script>
+  $(document).ready(function() {
+	 $('#fetch').click(function() {
+      $('#answer').load("LastProphet.txt");
+    }); // end click
+  });  // end ready
+</script>    
+    
+<body>
+
+
+
+<div class = "headerBar" id="Top">
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li ><a href="index.html">Home</a></li>
+        <li class="active"> <a href="islam.html">About Islam</a></li>
+        <li><a href="pillars.html"> Five Pillars</a></li>
+        <li><a href="holycity.html">Holy Cities of Islam</a></li>
+        <li ><a href="visit.html"> Travel </a></li>
+        <li ><a href="prophet.html"> Prophets in Islam </a></li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <main id="main">
+    <div class="col-sm-12 text-left"> 
+      <h3> The Holy Book of Islam </h3>
+      <p> The holy book of Islam is Quran and Muslims believe that the Quran was revealed to prophet Mohammad (peace be upon him) over period of twenty-three years. The holy Quran is not the words of prophet Mohammad (peace be upon him) it is the words of Allah. After prophet’s death his successors compiled these divine revelations in a manuscript, over the last 1400 years the holy Quran has been preserved.</p>
+		  <div>
+		   <img src ="image/quran.jpg" class = "imastyle img-circle" >
+		</div>
+
+
+<h2>Who was the last prophet?</h2>
+<form>
+  <label>
+    <input type="button" name="fetch" id="fetch" value="Fetch Answer" />
+  </label>
+</form>
+
+<h2 id="answer"></h2>        
+        
+<br>
+		  
+    <h4>For ordering the copy of the Holy Quran please fill up this form!</h4>    
+  
+	
+    <form class="formstyle" id="myForm" method="post" autocomplete ="on">
+<p>
+ <label>Name:
+   <input name="username" id="username" type="text" size="38" />
+ </label>
+</p>
+
+<p> 
+  <label>E-Mail Address:
+    <input name="email_address" id="email_address" type="email" size="38" />
+  </label>
+</p>
+<p>
+   <label>Home Address:
+   <input name="home" id="home" type="text" size="38" />
+ </label>
+</p>
+        
+<p>
+   <label> Your Favorite Islamic Website URL:
+    <input name= "url" id="url" type="url" size="38" />
+   </label>
+</p>        
+        
+<p>
+   <label>Today is:
+     <input type="text" id="Datepicker1">
+   </label>
+</p>
+
+<p>Have you read the Holy Quran before?</p>
+<div id="RadioButtons1">
+  <input type="radio" name="RadioButtons1" id="Radio1">
+  <label for="Radio1">Yes </label>
+  <input type="radio" name="RadioButtons1" id="Radio2">
+  <label for="Radio2">No </label>
+  <input type="radio" name="RadioButtons1" id="Radio3">
+  <label for="Radio3">Maybe </label>
+</div>
+
+        <br>
+    <p>
+	  <label for="select">How would you rate our site? </label>
+	  <select name="select" id="select">
+		  <option> Choose One </option>
+		  <option> Excellent  </option>
+		  <option> Good </option>
+		  <option> Fair </option>
+		  <option> Poor </option>
+		  <option> Terrible </option>
+		  
+      </select>
+	  <br>
+	  <br>
+	  Comments? <br> 
+	  <br>
+  </p>
+  <p>
+	  <label for="textarea"></label>
+	  <textarea name="textarea" id="textarea"></textarea>
+	  
+	  
+	  
+  </p>
+	<p>
+	  <input type="submit" name="submit" id="submit" value="Submit">
+	  <input type="reset">
+	</p>
+   
+</form>
+        
+<script type="text/javascript">
+$(function() {
+	$( "#Datepicker1" ).datepicker({
+		minDate:1,
+		maxDate:100
+	}); 
+});
+$(function() {
+	$( "#Dialog1" ).dialog({
+		title:"Warning",
+		autoOpen:false,
+		closeOnEscape:false,
+		modal:true,
+		show:{effect: "shake"}
+	});
+	$( "#button2" ).click(function(){
+ 		$( "#Dialog1" ).dialog("open");
+	});
+});
+$(function() {
+	$( "#Button1" ).button({
+		label:"Submit",
+		icons:{primary: "ui-icon-gear"}
+	}); 
+});
+$(function() {
+	$( "#RadioButtons1" ).buttonset(); 
+});
+$(function() {
+	$( "#Checkboxes1" ).buttonset(); 
+});
+</script>
+	<script>
+	$("#myForm").validate({
+	rules: {
+		username: {
+			required: true,
+			minlength:2
+			
+		},
+		
+		
+		email_address: {
+			required: true,
+			email: true
+			
+		},
+		home: {
+			required: true,
+			minlength:2
+			
+		},
+        
+        url: {
+			required: true,
+			url: true
+			
+		}
+	},
+		
+	message: {
+		username: {
+			required: "Please enter a username",
+			minlength: "Your username must consist of at least two characters"
+		},
+	
+	
+		email_address: {
+			required: "Please enter an email address",
+			email: "Please enter valid email address"
+			
+		},
+        
+        
+        url: {
+			required: "please enter a url",
+			url: "please enter a valid url"
+			
+		}
+		
+	}
+});
+	</script>
+		
+      <hr>
+      <h3></h3>
+      
+    </div>
+    
+   </div>
+  </div>
+
+
+<div class= "text-center" ><a href = "#Top" > Back to Top </a></div>
+<footer id="footer1" class="container-fluid text-center">
+    <p>Disclaimer: This website is developed as an educational project with materials used under Fair Use and restricted from further use.</p>
+
+</footer>
+	</main>
+</body>
+</html>

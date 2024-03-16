@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Home </title>
+	
+
+<header style="background-color: skyblue">
+<a href="#main" class="skip">Skip to main content</a>
+</header>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link href="css1.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+<body>
+
+
+
+
+<div class = "headerBar" id="Top">
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>                    
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="islam.html">About Islam</a></li>
+        <li><a href="pillars.html"> Five Pillars</a></li>
+        <li><a href="holycity.html">Holy Cities of Islam</a></li>
+        <li ><a href="visit.html"> Travel </a></li>
+        <li ><a href="prophet.html"> Prophets in Islam </a></li>
+
+
+    
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<br>
+<div style="text-align: center;">
+    <p>Welcome !</p>
+  
+    <p id="getName"></p>
+    <h1> &#128578 </h1>
+</div>
+<script>
+  
+var userName = localStorage.getItem("username");
+if(!userName){
+    userName = prompt("Please enter username");
+    localStorage.setItem("username", userName);
+   
+} 
+document.getElementById("getName").innerHTML = localStorage.getItem("username");
+
+
+var iconimages;
+  var picture = ["image/image1", "image/img2", "image/img3"];
+  
+  function pickimg () {
+      
+      var index = Math.floor(Math.random() * 3);
+      iconimages.setAttribute( "src",picture[index] + ".jpg");
+      
+      
+  }
+  
+  
+  function start() 
+  
+  {
+      
+      iconimages = document.getElementById("pic");
+      iconimages.addEventListener("click", pickimg, false);
+      
+      
+  }
+  
+  window.addEventListener("click", start, false);
+
+
+
+</script>
+
+
+
+
+
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <main id="main">
+      <div class="col-sm-12 text-left">
+        <h1> Islam </h1>
+        <p> Welcome to learn more about Islam! Islam is an Abrahamic monotheistic religion, Islam means (submission to the
+          will of God). On this website, we have discussed some basic and important information about Islam. This website
+          contains information about the five pillars of Islam, the holy cities of Islam, and prophets. </p>
+        <div>
+          <img id= "pic" src="image/image1.jpg" class="imastyle img-thumbnail">
+        </div>
+  
+  
+        <hr>
+        <h3></h3>
+  
+      </div>
+    
+   </div>
+  </div>
+
+
+<div class= "text-center" ><a href = "#Top" > Back to Top </a></div>
+<footer id="footer1" class="container-fluid text-center">
+    <p>Disclaimer: This website is developed as an educational project with materials used under Fair Use and restricted from further use.</p>
+
+</footer>
+	</main>
+</body>
+</html>

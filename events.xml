@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<events>
+	
+	<event>
+		<name>Muhammad S.A.W</name>
+		<location>Saudi Arabia </location>
+		<date>May 26th</date>
+		<eventimage>image/img3.jpg</eventimage>
+		<bkgimage/>
+		<descheader><![CDATA[Description Header]]></descheader>
+		<desc><![CDATA[Although 25 prophets are mentioned by name in the Quran, but we Muslims believe Allah send more than 25 prophets to humankind and they all taught the same message, belief in one God. 
+             ]]></desc>
+	</event>
+	
+	<event>
+		<name>Isah A.S</name>
+		<location>Palestine</location>
+	
+		<eventimage>image/aqsa.jpg</eventimage>
+		<bkgimage/>
+        <descheader><![CDATA[Description Header]]></descheader>
+		<desc><![CDATA[Although 25 prophets are mentioned by name in the Quran, but we Muslims believe Allah send more than 25 prophets to humankind and they all taught the same message, belief in one God. 
+             ]]></desc>
+	</event>
+	
+	<event>
+		<name>Hood A.S</name>
+		<location> Yamen </location>
+		
+		<eventimage>image/img2.jpg</eventimage>
+		<bkgimage/>
+        <descheader><![CDATA[Description Header]]></descheader>
+		<desc><![CDATA[Although 25 prophets are mentioned by name in the Quran, but we Muslims believe Allah send more than 25 prophets to humankind and they all taught the same message, belief in one God. 
+             ]]></desc>
+		
+	</event>
+	
+	<event>
+		<name>Ayub A.S</name>
+		<location>Jordan</location>
+		
+		<eventimage>image/jordan.jpg</eventimage>
+		<bkgimage/>
+        <descheader><![CDATA[Description Header]]></descheader>
+		<desc><![CDATA[Although 25 prophets are mentioned by name in the Quran, but we Muslims believe Allah send more than 25 prophets to humankind and they all taught the same message, belief in one God. 
+             ]]></desc>
+		
+	</event>
+	
+	<event>
+		<name>Looth A.S</name>
+		<location>Iraq</location>
+		
+		<eventimage>image/img2.jpg</eventimage>
+		<bkgimage/>
+        <descheader><![CDATA[Description Header]]></descheader>
+		<desc><![CDATA[Although 25 prophets are mentioned by name in the Quran, but we Muslims believe Allah send more than 25 prophets to humankind and they all taught the same message, belief in one God. 
+             ]]></desc>
+    </event>	
+	
+</events>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Travel </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+
+var child;
+    function start(){
+
+        document.getElementById("openW").addEventListener("click", open_window, false);
+        document.getElementById("closeW").addEventListener("click", close_window, false);
+
+
+}
+    function open_window(){
+
+            child = window.open("","","menubar=yes, toolbar=yes, height=400, width=300");
+            child.document.write("hello world");
+            document.getElementById("closeW").disabled=false;
+}
+
+
+    function close_window () 
+
+    {
+      if (child.closed)
+         alert("The Window has already been closed!");
+      
+       else
+
+       child.close();
+
+    }
+
+
+
+        window.addEventListener("load", start, false);
+
+
+
+
+</script>
+
+<script>
+
+
+  function processLinks()
+  {
+  
+    linksID = document.querySelectorAll("#color1, #color2, #color3");
+    var linkcolor = prompt("Please enter a color name for the headings!");
+   // document.body.setAttribute("color45", "background-color: " + linkcolor);
+    
+     for ( var c = 0; c < linksID.length; ++c) {
+  
+      
+  
+          var colorChange = linksID[c];
+          colorChange.setAttribute("style", "background-color: " + linkcolor);
+          
+      }
+  
+  } 
+  
+  window.addEventListener( "load", processLinks, false );
+    </script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #F7F07D;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: lightgreen;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.7s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(71, 221, 126, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+   border-radius: 12px;
+}
+
+h3{
+		  text-align: center;
+	  }
+
+h5{
+
+  text-align: center;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+footer {
+      background-color: #EFE45F;
+      color: black;
+      padding: 14px;
+      text-align: center;
+    }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="islam.html">About Islam</a>
+  <a href="pillars.html"> Five Pillars</a>
+  <a href="holycity.html">Holy Cities of Islam</a>
+  <a class="active" href="visit.html"> Travel </a>
+  <a href="prophet.html"> Prophets in Islam </a>
+</div>
+<br>
+
+    <h3 id="color2"> Mecca</h3>
+    <h5 id="color1"> Hajj is the pilgrimage to Mecca that every Muslim must make at least once in their lifetime if they are able.</h5>
+<form id="form1" name="form1" >
+  <input class="button1" type="button" name="openW" id="openW" value="Open JavaScript">
+  <input  class="button1"type="button" name="closeW" id="closeW" value="Close JavaScript" disabled = "disabled" >
+</form>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="image/img3.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="image/img2.jpg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="image/img1.jpg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  <script src = "java1.js" ></script>
+  
+  
+  <footer id="footer1" class="container-fluid text-center">
+    <p>Disclaimer: This website is developed as an educational project with materials used under Fair Use and restricted from further use.</p>
+    
+  </footer>
+  
+</body>
+</html>
